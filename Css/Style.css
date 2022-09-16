@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* START HEADER */
+.header_content li {
+  display: inline;
+  padding: 0px 30px;
+}
+
+.header_content li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.header_content img {
+  max-width: 70px;
+}
+header {
+  padding: 30px 0px;
+  font-family: "IBM Plex Serif", serif;
+  text-align: center;
+  position: relative;
+  background-color: #2e281c;
+}
+.header_content {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.header_content li a:hover {
+  color: #ca9c5e;
+}
+/* END HEADER */
+
+/* START CAROUSEL */
+
+.Carousel {
+  background-color: #ca9c5e;
+}
+.Carousel_banner img {
+  width: 100%;
+}
+
+/* END CAROUSEL */
+
+/* START PRODUCT */
+.product {
+  background-color: #2e281c;
+}
+.product_tittle {
+  text-align: center;
+  padding: 30px 0px;
+}
+.product_tittle h1 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 25px;
+}
+.product_tittle h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  font-weight: 400;
+  color: #ca9c5e;
+}
+.product_tittle li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.product_content {
+  padding: 10px 30px;
+}
+.product_item {
+  text-align: center;
+}
+.product_item img {
+  border-radius: 30px;
+}
+.product_item a {
+  text-decoration: none;
+}
+.product_item h3 {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  color: #ca9c5e;
+  font-size: 18px;
+  line-height: 25px;
+}
+.product_item p {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffffff;
+}
+.owl-nav {
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  color: #ca9c5e;
+  margin: auto;
+}
+
+/* END PRODUCT */
+
+/* START FOOTER */
+
+.footer_container {
+  background-color: #191914;
+  border: 2px solid #ca9c5e;
+  padding: 10px 0px;
+}
+.footer_title li {
+  display: inline;
+  padding: 30px 30px;
+}
+.footer_title {
+  text-align: center;
+}
+body {
+  background-color: #191914;
+}
+.footer_content {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 400px;
+}
+.footer_content li {
+  text-align: center;
+  padding: 10px 0px;
+  list-style: none;
+}
+.footer_content i {
+  font-size: 30px;
+  color: #b98f56;
+  transition: all 0.5s;
+}
+.footer_content h1 {
+  font-family: "IBM Plex Serif", serif;
+  color: #b98f56;
+  font-size: 18px;
+}
+.footer_content li {
+  font-family: "IBM Plex Serif", serif;
+  color: #b98f56;
+}
+.footer_content span {
+  color: #ffffff;
+}
+.ul_page a {
+  text-decoration: none;
+  color: #b98f56;
+  transition: all 0.5s;
+}
+.ul_icon i:hover {
+  color: #ffffff;
+}
+.ul_page a:hover {
+  color: #ffffff;
+}
+/* END FOOTER */
