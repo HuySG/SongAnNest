@@ -10,10 +10,13 @@
   padding: 0px 30px;
 }
 
-.header_content li a {
+.header_content a {
   text-decoration: none;
   color: #ffffff;
   transition: all 0.5s;
+}
+.header_content .active a {
+  color: #ca9c5e;
 }
 .header_content img {
   max-width: 70px;
@@ -34,6 +37,7 @@ header {
 .header_content li a:hover {
   color: #ca9c5e;
 }
+
 /* END HEADER */
 
 /* START CAROUSEL */

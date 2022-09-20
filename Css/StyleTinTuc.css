@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.TinTuc_item {
+  padding: 30px;
+}
+.TinTuc h1 {
+  text-align: center;
+  margin: auto;
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  font-weight: 500;
+  color: #ca9c5e;
+}
+.TinTuc_item {
+  text-align: center;
+}
+.TinTuc_item p {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.TinTuc_item a {
+  text-decoration: none;
+}
+.product_item h3 {
+  background-color: #252520;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+.product_item img {
+  border-radius: 0;
+}
