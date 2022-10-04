@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  font-weight: 400;
+  color: #ca9c5e;
+}
+.login {
+  margin: auto;
+  padding: 100px 200px;
+}
+.login h3 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 25px;
+  padding: 20px 0px;
+}
+
+.login_content input {
+  font-size: 20px;
+  font-family: "IBM Plex Serif", serif;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+}
+.submit {
+  padding: 30px 0px;
+}
+.submit input {
+  width: 200px;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  background-color: #ca9c5e;
+  transition: all 1s;
+}
+.submit input:hover {
+  background-color: #ffffff;
+}
+.login a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #ca9c5e;
+  transition: all 1s;
+}
+
+.login a:hover {
+  color: #ffffff;
+}
+.login_content form h2 {
+  color: red;
+  font-size: 20px;
+  font-family: "IBM Plex Serif", serif;
+}

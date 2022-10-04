@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.SignUp_tittle ul {
+  text-align: center;
+}
+.SignUp_tittle li {
+  display: inline-block;
+  padding: 20px;
+  color: #ca9c5e;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+}
+
+.SignUp_Content h3 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 25px;
+  padding: 20px 0px;
+}
+
+.SignUp_Content form {
+  text-align: center;
+  padding: 30px 300px;
+}
+.SignUp_Content input {
+  font-size: 20px;
+  font-family: "IBM Plex Serif", serif;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+}
+.SignUp_item {
+  border: 1px solid #ca9c5e;
+  padding: 10px 0px;
+  background-color: #2e281c;
+}
+.button {
+  padding: 20px 0px;
+}
+.button input {
+  width: 200px;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  background-color: #ca9c5e;
+  font-weight: 500;
+  transition: all 1s;
+  cursor: pointer;
+}
+.button input:hover {
+  background-color: #ffffff;
+}
+.SignUp_item h2 {
+  color: red;
+  font-size: 20px;
+  font-family: "IBM Plex Serif", serif;
+}

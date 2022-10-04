@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* START SAN PHAM CAROUSEL */
+.SanPham_Carousel {
+  margin: auto;
+  text-align: center;
+}
+.SanPham_Carousel li {
+  display: inline-block;
+  padding: 50px 30px;
+}
+
+/* END SAN PHAM CAROUSEL */
+
+/* START SAN PHAM */
+.SanPham {
+  margin: auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+.SanPham_container {
+  padding: 0px 40px;
+}
+.SanPham_title li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ca9c5e;
+}
+.SanPham_title h2 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 25px;
+}
+.SanPham_Content {
+  padding: 30px;
+}
+.product_item {
+  padding: 20px 40px;
+  max-width: fit-content;
+}
+
+/* END SAN PHAM */
