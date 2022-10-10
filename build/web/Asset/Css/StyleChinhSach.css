@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ChinhSachCarousel_container {
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+.ChinhSaschCarousel_tittle li {
+  display: inline-block;
+  padding: 20px;
+}
+.ChinhSaschCarousel_tittle h2 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 30px;
+}
+.ChinhSaschCarousel_tittle h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: 500;
+  color: #ca9c5e;
+}
+
+.ChinhSachCarousel_content {
+  padding: 30px 200px;
+}
+.ChinhSachCarousel_content details {
+  background-color: #191914;
+  border: 1px solid #ca9c5e;
+  text-align: start;
+  margin: 10px 10px;
+}
+.ChinhSachCarousel_content summary {
+  font-family: "IBM Plex Serif", serif;
+  color: #191914;
+  background-color: #ca9c5e;
+  font-weight: 500;
+  font-size: 30px;
+}
+.ChinhSachCarousel_content p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 3000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: start;
+}
+.ChinhSachCarousel_content h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: #ca9c5e;
+  padding: 10px;
+  text-align: start;
+}

@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.productDetail_container {
+  padding: 100px 50px;
+}
+.productDetail_Content {
+  display: flex;
+  padding: 30px 150px;
+}
+.productDetail_item img {
+  width: 500px;
+  border-radius: 30px;
+}
+.productDetail_Tittle {
+  padding: 0px 40px;
+}
+.productDetail_Tittle li {
+  display: inline;
+  width: 100px;
+  margin: auto;
+}
+.productDetail_Tittle ul {
+  padding: 20px 0px;
+}
+.productDetail_Tittle p {
+  font-family: "IBM Plex Serif", serif;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.productDetail_Tittle h2 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 35px;
+  padding: 20px 0px;
+}
+.productDetail_Tittle h3 {
+  font-family: "IBM Plex Serif", serif;
+  color: #ca9c5e;
+  font-size: 30px;
+  padding: 20px 0px;
+}
+.add_to_cart,
+.buy_now {
+  border-radius: 10px;
+  background-color: #ca9c5e;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 1s;
+  padding: 20px;
+}
+
+.button button:hover {
+  background-color: #ffffff;
+}
+
+.same_result {
+  border: 1px solid #ca9c5e;
+  text-align: center;
+  padding: 20px 0px;
+}

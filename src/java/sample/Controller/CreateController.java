@@ -68,9 +68,9 @@ public class CreateController extends HttpServlet {
                 boolean checkInsert = dao.insert(user);
                 if (checkInsert) {
                     url = SUCCESS;
-                } else {
-                    request.setAttribute("USER_ERROR", usererror);
                 }
+            } else {
+                request.setAttribute("USER_ERROR", usererror);
             }
         } catch (Exception e) {
             log("Error at Create Controller: " + e.toString());

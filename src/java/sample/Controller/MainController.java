@@ -23,7 +23,9 @@ public class MainController extends HttpServlet {
     private static final String LOGIN_CONTROLLER = "LoginController";
     private static final String CREATE = "Create";
     private static final String CREATE_CONTROLLER = "CreateController";
-
+    private static final String HOME = "SanPham.jsp";
+    private static final String HOME_CONTROLLER = "HomeController";
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -34,7 +36,9 @@ public class MainController extends HttpServlet {
                 url = LOGIN_CONTROLLER;
             } else if (CREATE.equals(action)) {
                 url = CREATE_CONTROLLER;
-            }
+            } else if (HOME_CONTROLLER.equals(action)) {
+                url = HOME_CONTROLLER;
+            } 
         } catch (Exception e) {
             log("Error at MainController" + e.toString());
         } finally {
