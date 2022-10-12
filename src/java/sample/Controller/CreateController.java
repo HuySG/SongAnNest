@@ -21,7 +21,7 @@ import sample.DTO.userError;
  */
 public class CreateController extends HttpServlet {
 
-    private static final String ERROR = "signUpPage.jsp";
+    private static final String ERROR = "login.jsp";
     private static final String SUCCESS = "login.jsp";
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -34,12 +34,13 @@ public class CreateController extends HttpServlet {
         try {
 //            int user_ID = Integer.parseInt(request.getParameter("user_ID"));
             String userName = request.getParameter("userName");
-            String user_Fullname = request.getParameter("user_Fullname");
+//            String user_Fullname = request.getParameter("user_Fullname");
+            String Email = request.getParameter("Email");
             String passWord = request.getParameter("passWord");
             String password_Comfirm = request.getParameter("passWord_ComfirmError");
-            int phoneNumber = Integer.parseInt(request.getParameter("phoneNumber"));
-            String Email = request.getParameter("Email");
-            String Address = request.getParameter("Address");
+//            int phoneNumber = Integer.parseInt(request.getParameter("phoneNumber"));
+
+//            String Address = request.getParameter("Address");
             String role_ID = request.getParameter("role_ID");
 
             //CHECK VALIDATION USER NAME
@@ -48,10 +49,10 @@ public class CreateController extends HttpServlet {
                 usererror.setUserNameError("USER NAME MUST IN FROM 2 TO 10!");
             }
             // CHECK USER NAME
-            boolean checkDuplicate = dao.checkDuplicate(userName);
+            boolean checkDuplicate = dao.checkDuplicate(Email);
             if (checkDuplicate == false) {
                 checkValidation = false;
-                usererror.setUserNameError("USER NAME HAVE BEEN USED! ");
+                usererror.setUserNameError("EMAIL HAVE BEEN USED! ");
             }
             // CHECK PASSWORD - COMFIRM
             if (!passWord.equals(password_Comfirm)) {
@@ -64,7 +65,7 @@ public class CreateController extends HttpServlet {
 //                usererror.setAdressError("ADDRESS MUST BE MORE THAN 1 WORD!");
 //            }
             if (checkValidation) {
-                userDTO user = new userDTO(0, user_Fullname, userName, passWord, phoneNumber, Email, Address, role_ID);
+                userDTO user = new userDTO(0, "", userName, Email, 0,passWord , "", role_ID);
                 boolean checkInsert = dao.insert(user);
                 if (checkInsert) {
                     url = SUCCESS;

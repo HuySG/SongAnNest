@@ -18,11 +18,11 @@ import sample.Utils.DBUtil;
  */
 public class userDAO {
 
-    private static final String LOGIN = "SELECT * FROM tb_User WHERE userName = ? AND passWord = ? ";
-    private static final String CHECK_DUPLICATE = "SELECT userName FROM tb_User WHERE userName = ?";
-    private static final String INSERT = "INSERT INTO tb_User(user_Fullname, userName, passWord, phoneNumber, Email, Address, role_ID) VALUES(?,?,?,?,?,?,2)";
+    private static final String LOGIN = "SELECT * FROM tb_User WHERE Email = ? AND passWord = ? ";
+    private static final String CHECK_DUPLICATE = "SELECT userName FROM tb_User WHERE Email = ?";
+    private static final String INSERT = "INSERT INTO tb_User( userName, passWord, Email, role_ID) VALUES(?,?,?,2)";
 
-    public userDTO checkLogin(String userName, String passWord) throws SQLException {
+    public userDTO checkLogin(String Email, String passWord) throws SQLException {
         userDTO user = null;
         Connection conn = null;
         PreparedStatement psm = null;
@@ -31,14 +31,14 @@ public class userDAO {
             conn = DBUtil.getConnection();
             if (conn != null) {
                 psm = conn.prepareStatement(LOGIN);
-                psm.setString(1, userName);
+                psm.setString(1, Email);
                 psm.setString(2, passWord);
                 rs = psm.executeQuery();
                 if (rs.next()) {
                     int user_ID = rs.getInt("user_ID");
                     String user_Fullname = rs.getString("user_Fullname");
                     int phoneNumber = rs.getInt("phoneNumber");
-                    String Email = rs.getString("Email");
+                    String userName = rs.getString("userName");
                     String Address = rs.getString("Address");
                     String role_ID = rs.getString("role_ID");
                     user = new userDTO(user_ID, user_Fullname, userName, "", phoneNumber, Email, Address, role_ID);
@@ -61,7 +61,7 @@ public class userDAO {
         return user;
     }
 
-    public boolean checkDuplicate(String userName) throws SQLException {
+    public boolean checkDuplicate(String Email) throws SQLException {
         boolean check = true;
         PreparedStatement psm = null;
         ResultSet rs = null;
@@ -70,7 +70,7 @@ public class userDAO {
             conn = DBUtil.getConnection();
             if (conn != null) {
                 psm = conn.prepareStatement(CHECK_DUPLICATE);
-                psm.setString(1, userName);
+                psm.setString(1, Email);
                 rs = psm.executeQuery();
                 if (rs.next()) {
                     check = false;
@@ -100,12 +100,9 @@ public class userDAO {
             conn = DBUtil.getConnection();
             if (conn != null) {
                 psm = conn.prepareStatement(INSERT);
-                psm.setString(1, user.getUser_Fullname());
-                psm.setString(2, user.getUserName());
+                psm.setString(1, user.getUserName());
+                psm.setString(2, user.getEmail());
                 psm.setString(3, user.getPassWord());
-                psm.setInt(4, user.getPhoneNumber());
-                psm.setString(5, user.getEmail());
-                psm.setString(6, user.getAddress());
 //                psm.setString(7, user.getRole_ID() );
                 check = psm.executeUpdate() > 0 ? true : false;
             }

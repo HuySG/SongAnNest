@@ -21,7 +21,7 @@ import sample.DTO.userDTO;
  */
 public class LoginController extends HttpServlet {
     
-    private static final String ERROR = "login.jsp";
+    private static final String ERROR = "";
     private static final String US = "2";
     private static final String AD = "1";
     private static final String USER_PAGE = "indexUser.jsp";
@@ -32,10 +32,10 @@ public class LoginController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String url = ERROR;
         try {
-            String userName = request.getParameter("userName");
+            String Email = request.getParameter("Email");
             String passWord = request.getParameter("passWord");
             userDAO dao = new userDAO();
-            userDTO loginUser = dao.checkLogin(userName, passWord);
+            userDTO loginUser = dao.checkLogin(Email, passWord);
             if (loginUser != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("LOGIN_USER", loginUser);
