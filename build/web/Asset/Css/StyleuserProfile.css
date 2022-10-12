@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.profile_tittle {
+  text-align: center;
+  padding: 30px;
+}
+.profile_tittle ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.profile_tittle h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  color: #ca9c5e;
+}
